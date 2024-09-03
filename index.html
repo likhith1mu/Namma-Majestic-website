@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Namma Majestic Webpage</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div>Welcome to Namma Majestic</div>
+    <nav>
+      <ul>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Services</a></li>
+        <li><a href="#section4">Contact</a></li>
+      </ul>
+      
+    </nav>
+    <div class="search-container">
+        
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit">Search</button>
+        
+      </div>
+  </header>
+
+  <section id="section1">
+    
+    <button id="resetButton">Reset View</button>
+    <button id="userButton">user View</button>
+    <div class="container">
+    <div id="map" ></div>
+    <div id="map_image" >
+        <img src="map.jpg" alt="Map Image" />
+    </div>
+    </div>
+    
+  </section>
+
+  <section id="section2">
+    <h2>About</h2>
+
+    <p>This section contains information about us.</p>
+    
+    <h1>Bus Search Filter</h1>
+
+    <div class="filter-container">
+        <label for="route_number">Route Number:</label>
+        <input type="text" id="route_number" placeholder="Enter Route Number">
+
+        <label for="platform_number">Platform Number:</label>
+        <input type="text" id="platform_number" placeholder="Enter Platform Number">
+
+        <label for="final_stop">Final Stop:</label>
+        <input type="text" id="final_stop" placeholder="Enter Final Stop">
+
+        <button onclick="applyFilter()">Search</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Platform Number</th>
+                <th>Route Number</th>
+                <th>Coordinates</th>
+                <th>Final Stop</th>
+                <th>Sub Stops</th>
+            </tr>
+        </thead>
+        <tbody id="busTableBody">
+            <!-- Filtered results will be displayed here -->
+        </tbody>
+    </table>
+
+  </section>
+
+  <section id="section3">
+    <h2>Services</h2>
+    <p>Details about our services are listed here.</p>
+    <div id="controls">
+      <input type="text" id="coordinatesInput" placeholder="Enter coordinates (latitude,longitude)" />
+      <button id="addMarkerButton">Add Marker</button>
+  </div>
+  </section>
+
+  <section id="section4">
+    <h2>Contact</h2>
+    <p>Get in touch with us through this section.</p>
+
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+      <button id="scrollToTopButton">&#x2191;</button> <!-- Unicode for up arrow -->
+    </div>
+    <script src="script.js"></script>
+  </footer>
+  
+
+</body>
+</html>

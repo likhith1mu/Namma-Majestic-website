@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Search Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Bus Search Filter</h1>
+
+    <div class="filter-container">
+        <label for="route_number">Route Number:</label>
+        <input type="text" id="route_number" placeholder="Enter Route Number">
+
+        <label for="platform_number">Platform Number:</label>
+        <input type="text" id="platform_number" placeholder="Enter Platform Number">
+
+        <label for="final_stop">Final Stop:</label>
+        <input type="text" id="final_stop" placeholder="Enter Final Stop">
+
+        <button onclick="applyFilter()">Search</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Platform Number</th>
+                <th>Route Number</th>
+                <th>Coordinates</th>
+                <th>Final Stop</th>
+                <th>Sub Stops</th>
+            </tr>
+        </thead>
+        <tbody id="busTableBody">
+            <!-- Filtered results will be displayed here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

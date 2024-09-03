@@ -1,0 +1,17 @@
+[
+    {
+        "route_number": "285M",
+        "platform_number": "1",
+        "final_stop": "Doddaballapura",
+        "coordinates": ["12.9716,77.5946"],
+        "sub_stops": ["Kempegowda Bus station", "KPCC Office", "Shivanada store","hebbala"]
+    },
+    {
+        "route_number": "B456",
+        "platform_number": "1",
+        "final_stop": "Kempegowda Bus station",
+        "coordinates": ["12.9352,77.6245"],
+        "sub_stops": ["Stop E", "Stop F", "Stop A"]
+    }
+    
+]
